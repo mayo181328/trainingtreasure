@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarView">
+            <connections>
+                <outlet property="JewelLabel" destination="UVQ-ad-LW7" id="1NR-wz-EZ1"/>
+                <outlet property="LevelLabel" destination="erH-f6-8Wf" id="nBK-NC-QNV"/>
+                <outlet property="NameLabel" destination="xOg-T6-dHE" id="xr5-Iz-PCt"/>
+                <outlet property="StageLabel" destination="tM9-hW-bnB" id="c4B-SE-8gK"/>
+                <outlet property="coinLabel" destination="Y7c-La-Z01" id="8TB-Ov-dnI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopBarView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_topbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="OPW-x5-esu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summary_topbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Qp-aL-S3J">
+                    <rect key="frame" x="0.0" y="28" width="414" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOg-T6-dHE">
+                    <rect key="frame" x="77" y="38" width="179" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xOg-T6-dHE" secondAttribute="height" multiplier="179:21" id="xBs-cM-RmC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lv.--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-f6-8Wf">
+                    <rect key="frame" x="9" y="39.5" width="51" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="erH-f6-8Wf" secondAttribute="height" multiplier="57:23" id="5lV-VY-sCi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-La-Z01">
+                    <rect key="frame" x="49" y="71" width="73" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Y7c-La-Z01" secondAttribute="height" multiplier="73:21" id="WBg-hB-ifC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVQ-ad-LW7">
+                    <rect key="frame" x="169" y="71" width="87" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UVQ-ad-LW7" secondAttribute="height" multiplier="29:7" id="LQj-am-j5h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM9-hW-bnB">
+                    <rect key="frame" x="290.5" y="44.5" width="105" height="39.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tM9-hW-bnB" secondAttribute="height" multiplier="8:3" id="78z-C8-xfk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xOg-T6-dHE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="2BT-gm-TXL"/>
+                <constraint firstItem="OPW-x5-esu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Q6-QL-1Dy"/>
+                <constraint firstItem="OPW-x5-esu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DVB-QW-Noh"/>
+                <constraint firstItem="Y7c-La-Z01" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="28" id="S0b-In-rtO"/>
+                <constraint firstItem="OPW-x5-esu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ZpZ-Nx-JT6"/>
+                <constraint firstItem="erH-f6-8Wf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-4" id="a8S-RA-oNA"/>
+                <constraint firstItem="tM9-hW-bnB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10.5" id="cHt-kJ-51k"/>
+                <constraint firstItem="UVQ-ad-LW7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="28" id="lax-32-1Id"/>
+                <constraint firstItem="Y7c-La-Z01" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-121.5" id="mos-pf-7Qd"/>
+                <constraint firstItem="tM9-hW-bnB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="136" id="ob6-el-9fA"/>
+                <constraint firstItem="xOg-T6-dHE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-40.5" id="pZX-nk-P6p"/>
+                <constraint firstItem="UVQ-ad-LW7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="5.5" id="tew-xy-amr"/>
+                <constraint firstItem="erH-f6-8Wf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-172.5" id="vd3-Oz-HGe"/>
+                <constraint firstItem="OPW-x5-esu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wlX-4W-xyf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-73.913043478260875" y="216.62946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_topbar.png" width="4140" height="1070"/>
+        <image name="summary_topbar.png" width="377.4857177734375" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
